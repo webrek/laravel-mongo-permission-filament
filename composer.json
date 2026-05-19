@@ -1,0 +1,48 @@
+{
+    "name": "webrek/laravel-mongo-permission-filament",
+    "description": "Filament v3 panel resources for webrek/laravel-mongo-permission",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "filament",
+        "mongodb",
+        "permissions",
+        "roles",
+        "rbac",
+        "acl",
+        "authorization"
+    ],
+    "support": {
+        "issues": "https://github.com/webrek/laravel-mongo-permission-filament/issues",
+        "source": "https://github.com/webrek/laravel-mongo-permission-filament"
+    },
+    "require": {
+        "php": "^8.1",
+        "filament/filament": "^3.0",
+        "webrek/laravel-mongo-permission": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webrek\\MongoPermissionFilament\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webrek\\MongoPermissionFilament\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webrek\\MongoPermissionFilament\\MongoPermissionFilamentServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
