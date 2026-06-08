@@ -8,6 +8,20 @@ project adheres to
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-06-08
+
+### Added
+- Test suite (Filament panel + Livewire) covering the Role and Permission
+  resources: list pages render, records can be created, and edit pages load
+  their existing data.
+- GitHub Actions CI (PHP 8.2/8.3/8.4 against Laravel 12, with a MongoDB service)
+  plus PHPStan (level 5).
+
+### Changed
+- Target **Laravel 12 / PHP 8.2+** and require
+  `webrek/laravel-mongo-permission` `^1.5` (legacy flat-data fix + cache
+  invalidation).
+
 ## [0.1.0] - 2026-05-18
 
 ### Added

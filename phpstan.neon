@@ -1,0 +1,9 @@
+parameters:
+    level: 5
+    paths:
+        - src
+    ignoreErrors:
+        # Eloquent query results are inferred as stdClass without larastan; the
+        # option closures call ->getKey()/->name on the resolved models.
+        - identifier: method.nonObject
+          path: src/Resources/*.php
