@@ -5,19 +5,17 @@
 
 ## Status
 
-**v0.1.0 — alpha.** The plugin ships working Role and Permission
-resources for a Filament panel. Forms support name, guard, team
-scope, attached permissions, and (for roles) parent-role
-inheritance. Tables surface row counts and badge wildcard
-permissions.
+**v1.0.0.** The plugin ships working Role and Permission resources for
+a Filament panel. Forms support name, guard, team scope, attached
+permissions, and (for roles) parent-role inheritance. Tables surface
+row counts and badge wildcard permissions.
 
-What is **not** in v0.1.0 yet:
+Not included yet:
 
 - A relation manager on the User resource (assign roles/permissions
   to a user from the user edit page).
 - A team-aware scope filter on the panel.
 - Bulk wildcard warnings on permission creation.
-- Tests against a real Filament panel.
 
 Contributions welcome — see "Roadmap" below.
 
@@ -25,10 +23,10 @@ Contributions welcome — see "Roadmap" below.
 
 | Dependency | Version |
 |---|---|
-| PHP | 8.1+ |
-| Laravel | 10.x / 11.x / 12.x |
+| PHP | 8.2+ |
+| Laravel | 12.x |
 | Filament | 3.x |
-| `webrek/laravel-mongo-permission` | ^1.0 |
+| `webrek/laravel-mongo-permission` | ^1.5 |
 
 ## Install
 
@@ -74,7 +72,7 @@ group: **Roles** and **Permissions**.
 
 ## Roadmap
 
-The plugin is intentionally minimal in v0.1.0. Future work:
+The plugin is intentionally minimal. Future work:
 
 1. **User relation manager** — a relation manager you can plug into
    your own `UserResource` so admins can attach / detach roles and
@@ -84,10 +82,10 @@ The plugin is intentionally minimal in v0.1.0. Future work:
    queries to the current team, integrating with the package's
    `setPermissionsTeamId` and `team-context` middleware.
 3. **TTL grant UI** — assign-until widget in the relation manager
-   for v1.1 expiring grants.
+   for expiring grants.
 4. **Bulk-import** — UI wrapper around `permission:migrate-from-spatie`.
-5. **Filament panel tests** with `pestphp/pest-plugin-laravel` or
-   PHPUnit + Livewire test helpers.
+5. **Fuller panel tests** — table and edit-page render coverage
+   (record creation and plugin registration are already tested).
 
 Open an issue or PR with proposals.
 

@@ -40,5 +40,6 @@ project adheres to
   `setPermissionsTeamId()` themselves.
 - No tests in the v0.1.0 cut.
 
-[Unreleased]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/webrek/laravel-mongo-permission-filament/releases/tag/v0.1.0
