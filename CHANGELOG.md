@@ -8,6 +8,12 @@ project adheres to
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-16
+
+### Added
+- Laravel 13 support. Filament 3 and `webrek/laravel-mongo-permission` 1.7 both
+  run on Laravel 13; the package now installs on Laravel 12 and 13 (PHP 8.2+).
+
 ## [1.0.0] - 2026-06-08
 
 ### Added
@@ -40,6 +46,7 @@ project adheres to
   `setPermissionsTeamId()` themselves.
 - No tests in the v0.1.0 cut.
 
-[Unreleased]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/webrek/laravel-mongo-permission-filament/compare/v0.1.0...v1.0.0
 [0.1.0]: https://github.com/webrek/laravel-mongo-permission-filament/releases/tag/v0.1.0

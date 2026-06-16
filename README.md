@@ -24,7 +24,7 @@ Contributions welcome — see "Roadmap" below.
 | Dependency | Version |
 |---|---|
 | PHP | 8.2+ |
-| Laravel | 12.x |
+| Laravel | 12.x / 13.x |
 | Filament | 3.x |
 | `webrek/laravel-mongo-permission` | ^1.5 |
 
